@@ -1,0 +1,14 @@
+//we can access the heap memory using pointer in structure like bellow
+#include<bits/stdc++.h>
+using namespace std;
+struct student{
+long long rol,reg;
+};
+int main(){
+struct student *p;
+//heap memory addressing
+p=(struct student *)malloc(sizeof(struct student));
+p->rol=5;
+p->reg=8;
+cout<<p->rol<<" "<<p->reg;
+}
