@@ -1,0 +1,13 @@
+//It access the address in the stack
+
+#include<bits/stdc++.h>
+using namespace std;
+struct student{
+long long rol,reg;
+string name;
+};
+int main(){
+struct student s1={1602066,6558,"Rakib"};
+struct student *p=&s1;
+cout<<p->name<<" "<<p->rol<<" "<<p->reg;
+}
