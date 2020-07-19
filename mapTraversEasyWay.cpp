@@ -13,3 +13,24 @@ int main()
         //string& value = val.second;
         //int key = val.first;
 }
+
+
+//ex 2:
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    map<int,int>mp;
+    int n;cin>>n;
+    for(int i=0;i<n;i++){
+        int x;cin>>x;
+        mp[x]=i+1;
+    }
+    //map always be sorted according to key
+   //sort(mp.begin(),mp.size());
+    //for(auto val : mp )cout<<val.first<<" - > "<<val.second<<endl;
+    for(auto x : mp)cout<<x.second<<" ";
+    cout<<endl;
+}
+
